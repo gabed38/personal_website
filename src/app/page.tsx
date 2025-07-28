@@ -1,103 +1,126 @@
-import Image from "next/image";
+'use client'
+
+import Link from 'next/link'
+import { LazyMotion, domAnimation, m } from 'framer-motion'
+import { Box, Button, Heading, Text, Stack, Container } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <LazyMotion features={domAnimation}>
+      <m.main 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 0.8 }}
+      >
+        <Box
+          minH="100vh"
+          position="relative"
+          overflow="hidden"
+          bgGradient="linear(to-br, blue.800, purple.900, pink.900)"
+          _before={{
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: "radial-gradient(circle at 25px 25px, rgba(255,255,255,0.1) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(255,255,255,0.1) 2%, transparent 0%)",
+            backgroundSize: "100px 100px",
+            opacity: 0.3,
+            pointerEvents: "none",
+          }}
+        >
+          <Container maxW="container.lg" centerContent>
+            <Box
+              p={12}
+              borderRadius="2xl"
+              backdropFilter="blur(12px)"
+              bg="rgba(255, 255, 255, 0.1)"
+              boxShadow="dark-lg"
+              mt={20}
+              textAlign="center"
+              border="1px solid"
+              borderColor="whiteAlpha.200"
+            >
+              <m.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+              >
+                <Heading 
+                  mb={6} 
+                  bgGradient="linear(to-r, blue.200, purple.200)"
+                  bgClip="text"
+                  fontSize={{ base: "3xl", md: "4xl" }}
+                >
+                  Hi, I'm Gabriel Darnell
+                </Heading>
+              </m.div>
+              
+              <m.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+              >
+                <Text fontSize={{ base: "lg", md: "xl" }} mb={4} color="whiteAlpha.900">
+                  AI-focused Software Engineer building production-grade LLM apps.
+                </Text>
+                <Text fontSize={{ base: "lg", md: "xl" }} mb={8} color="whiteAlpha.900">
+                  Check out my Resume and Projects below.
+                </Text>
+              </m.div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+              <m.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              >
+                <Stack direction={{ base: 'column', md: 'row' }} spacing={6} justify="center">
+                  <Link href="/resume" passHref>
+                    <Button 
+                      as="a" 
+                      size="lg"
+                      colorScheme="blue" 
+                      rounded="xl" 
+                      shadow="lg"
+                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                      transition="all 0.2s"
+                    >
+                      View Resume
+                    </Button>
+                  </Link>
+                  <Link href="/projects" passHref>
+                    <Button 
+                      as="a" 
+                      size="lg"
+                      colorScheme="purple" 
+                      rounded="xl" 
+                      shadow="lg"
+                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                      transition="all 0.2s"
+                    >
+                      View Projects
+                    </Button>
+                  </Link>
+                  <Link href="/contact" passHref>
+                    <Button 
+                      as="a" 
+                      size="lg"
+                      colorScheme="pink" 
+                      rounded="xl" 
+                      shadow="lg"
+                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                      transition="all 0.2s"
+                    >
+                      Contact
+                    </Button>
+                  </Link>
+                </Stack>
+              </m.div>
+            </Box>
+          </Container>
+        </Box>
+      </m.main>
+    </LazyMotion>
+  )
 }

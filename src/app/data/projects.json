@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "An innovative AI chatbot.",
+      "link": "https://github.com/yourusername/project-one"
+    },
+    {
+      "title": "Project Two",
+      "description": "A portfolio website with Chakra UI.",
+      "link": "https://github.com/yourusername/project-two"
+    }
+  ]
+}

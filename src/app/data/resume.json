@@ -1,0 +1,95 @@
+{
+  "sections": [
+    {
+      "title": "Professional Summary",
+      "items": [
+        {
+          "description": "AI-focused Software Engineer specializing in production-grade LLM applications and full-stack development. Experienced in building scalable web applications with modern technologies and best practices."
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "Software Engineer",
+          "subtitle": "Tech Company",
+          "date": "2022 - Present",
+          "description": "Building scalable web apps and AI-powered services. Lead development of multiple LLM-based applications. Implemented CI/CD pipelines and microservices architecture."
+        },
+        {
+          "title": "Junior Developer",
+          "subtitle": "StartUp Inc",
+          "date": "2021 - 2022",
+          "description": "Developed and maintained full-stack applications using React and Node.js. Collaborated with cross-functional teams to deliver features on schedule."
+        }
+      ]
+    },
+    {
+      "title": "Skills & Technologies",
+      "items": [
+        {
+          "title": "Programming Languages",
+          "description": "TypeScript, Python, JavaScript, Go"
+        },
+        {
+          "title": "AI & Machine Learning",
+          "description": "LangChain, OpenAI API, Hugging Face, PyTorch"
+        },
+        {
+          "title": "Web Technologies",
+          "description": "React, Next.js, Node.js, GraphQL"
+        },
+        {
+          "title": "Cloud & DevOps",
+          "description": "AWS, Docker, Kubernetes, CI/CD"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "Bachelor of Science in Computer Science",
+          "subtitle": "University Name",
+          "date": "2018 - 2022",
+          "description": "Focused on AI and machine learning. GPA: 3.8/4.0"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "AI Code Assistant",
+          "subtitle": "Personal Project",
+          "date": "2023",
+          "description": "Developed an AI-powered code review and suggestion tool using OpenAI's GPT-4 API and LangChain."
+        },
+        {
+          "title": "Smart Resume Builder",
+          "subtitle": "Open Source Project",
+          "date": "2023",
+          "description": "Created an automated resume generation system using Next.js, TypeScript, and AI for content optimization."
+        }
+      ]
+    },
+    {
+      "title": "Certifications",
+      "items": [
+        {
+          "title": "AWS Solutions Architect Associate",
+          "subtitle": "Amazon Web Services",
+          "date": "2023",
+          "description": "Certification for designing distributed systems on AWS"
+        },
+        {
+          "title": "Professional Scrum Master I",
+          "subtitle": "Scrum.org",
+          "date": "2022",
+          "description": "Certified in Agile project management and Scrum methodologies"
+        }
+      ]
+    }
+  ]
+}
