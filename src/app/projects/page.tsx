@@ -2,11 +2,13 @@
 
 import { Box, Heading, Link as ChakraLink, Text, Stack } from '@chakra-ui/react'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import projectsData from '@/data/projects.json'
+import projectsData from '@/app/data/projects.json'
+import BackButton from '@/components/ui/BackButton'
 
 export default function Projects() {
   return (
     <LazyMotion features={domAnimation}>
+      <BackButton />
       <m.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <Box maxW="4xl" mx="auto" p={8}>
           <Heading mb={6}>Projects</Heading>

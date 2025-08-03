@@ -2,11 +2,13 @@
 
 import { Box, Heading, Text, Stack, Divider, Container } from '@chakra-ui/react'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import resumeData from '@/data/resume.json'
+import resumeData from '@/app/data/resume.json'
+import BackButton from '@/components/ui/BackButton'
 
 export default function Resume() {
   return (
     <LazyMotion features={domAnimation}>
+      <BackButton />
       <m.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <Box
           minH="100vh"

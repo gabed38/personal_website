@@ -4,7 +4,7 @@
       "title": "Professional Summary",
       "items": [
         {
-          "description": "AI-focused Software Engineer specializing in production-grade LLM applications and full-stack development. Experienced in building scalable web applications with modern technologies and best practices."
+          "description": "Software Engineer specializing in AI/ML with expertise in designing and deploying large language model (LLM) systems in production environments. Experienced in building agentic and retrieval-augmented generation (RAG) tools for enterprise applications, optimizing performance and cost efficiency. Skilled in backend and cloud-native development with a strong track record of delivering scalable, reliable AI-powered solutions in fast-paced, collaborative environments."
         }
       ]
     },
@@ -12,16 +12,51 @@
       "title": "Work Experience",
       "items": [
         {
-          "title": "Software Engineer",
-          "subtitle": "Tech Company",
-          "date": "2022 - Present",
-          "description": "Building scalable web apps and AI-powered services. Lead development of multiple LLM-based applications. Implemented CI/CD pipelines and microservices architecture."
+          "title": "Software Engineer (AI Solutions)",
+          "subtitle": "Pacific Investment Management Company (PIMCO)",
+          "date": "Jan 2024 - Present",
+          "description": "Developed agentic Python application using AutoGen and OpenAI GPT-4 to answer performance and positioning NLP queries, improving analyst productivity by 60%. Built C#/.NET RAG-based tool to prefill DDQs, reducing manual workload by 40%. Authored and presented firmwide LLM Cost Optimization Guide, decreasing LLM usage costs by ~50%. Created regression testing framework for agentic applications to ensure accuracy across iterations. Deployed ML-powered apps on AWS EKS; monitored using Datadog and Komodor. Tech Stack: Python, AutoGen, OpenAI API, C#, .NET, SQL, AWS, JavaScript"
         },
         {
-          "title": "Junior Developer",
-          "subtitle": "StartUp Inc",
-          "date": "2021 - 2022",
-          "description": "Developed and maintained full-stack applications using React and Node.js. Collaborated with cross-functional teams to deliver features on schedule."
+          "title": "Software Engineer (Compliance)",
+          "subtitle": "Pacific Investment Management Company (PIMCO)",
+          "date": "Feb 2022 - Dec 2023",
+          "description": "Developed monitoring service to flag slow/hung nodes, enhancing system resilience. Upgraded hedging service (Java version, GitLab migration, API refactor). Managed weekly production releases and implemented usability improvements in compliance engine. Tech Stack: Java, Python, Bash, AVRO, SQL, Splunk, Autosys"
+        },
+        {
+          "title": "Technology Analyst Intern (Compliance)",
+          "subtitle": "Pacific Investment Management Company (PIMCO)",
+          "date": "Jun 2021 - Aug 2021",
+          "description": "Developed tagging enhancement for Rev3 Compliance Engine to organize and navigate components. Developed back end in Java and used transactional based Oracle queries to update database. Defined AVRO schemas to send and receive data between the server and UI. Presented and demoed tagging enhancement to over 100 employees at end of summer."
+        },
+        {
+          "title": "Technology Analyst Intern (Booking Platform)",
+          "subtitle": "Pacific Investment Management Company (PIMCO)",
+          "date": "Jun 2020 - Aug 2020",
+          "description": "Full stack development of audit service for Booking Platform, deployed on PCF. Managed the project from inception to production deployment including full design documentation. Developed back end in Java using Spring framework connected to Oracle database using AMPS Topics. Presented and demoed working audit service to over 100 employees at end of summer."
+        },
+        {
+          "title": "Application Specialist Intern",
+          "subtitle": "W-Systems",
+          "date": "Jun 2019 - Aug 2019",
+          "description": "Coded in PHP within SugarCRM’s framework to customize client instances. Managed a project through the full engineering life cycle that involved DocuSign API. Solved bugs in client instances by running database queries and cleaning up faulty code. Upgraded client instances by altering databases, PHP, JavaScript and MySQL code."
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "Master of Science in Electrical and Computer Engineering",
+          "subtitle": "University of Texas at Austin",
+          "date": "2020 - 2021",
+          "description": "Focused on AI, distributed systems, and blockchain. GPA: 3.9/4.0"
+        },
+        {
+          "title": "Bachelor of Science in Electrical and Computer Engineering",
+          "subtitle": "University of Texas at Austin",
+          "date": "2017 - 2020",
+          "description": "Progressed from binary to assembly to OOP languages. GPA: 3.5/4.0"
         }
       ]
     },
@@ -30,11 +65,11 @@
       "items": [
         {
           "title": "Programming Languages",
-          "description": "TypeScript, Python, JavaScript, Go"
+          "description": "Python, Java, C#, C++, C, PHP, ARM ASM, TypeScript, JavaScript, Go, Scala"
         },
         {
           "title": "AI & Machine Learning",
-          "description": "LangChain, OpenAI API, Hugging Face, PyTorch"
+          "description": "Autogen, LLM APIs, MCP, LangChain, Hugging Face, PyTorch"
         },
         {
           "title": "Web Technologies",
@@ -42,35 +77,7 @@
         },
         {
           "title": "Cloud & DevOps",
-          "description": "AWS, Docker, Kubernetes, CI/CD"
-        }
-      ]
-    },
-    {
-      "title": "Education",
-      "items": [
-        {
-          "title": "Bachelor of Science in Computer Science",
-          "subtitle": "University Name",
-          "date": "2018 - 2022",
-          "description": "Focused on AI and machine learning. GPA: 3.8/4.0"
-        }
-      ]
-    },
-    {
-      "title": "Projects",
-      "items": [
-        {
-          "title": "AI Code Assistant",
-          "subtitle": "Personal Project",
-          "date": "2023",
-          "description": "Developed an AI-powered code review and suggestion tool using OpenAI's GPT-4 API and LangChain."
-        },
-        {
-          "title": "Smart Resume Builder",
-          "subtitle": "Open Source Project",
-          "date": "2023",
-          "description": "Created an automated resume generation system using Next.js, TypeScript, and AI for content optimization."
+          "description": "AWS, Docker, Kubernetes, Git, CI/CD"
         }
       ]
     },
@@ -78,16 +85,10 @@
       "title": "Certifications",
       "items": [
         {
-          "title": "AWS Solutions Architect Associate",
-          "subtitle": "Amazon Web Services",
-          "date": "2023",
-          "description": "Certification for designing distributed systems on AWS"
-        },
-        {
-          "title": "Professional Scrum Master I",
-          "subtitle": "Scrum.org",
-          "date": "2022",
-          "description": "Certified in Agile project management and Scrum methodologies"
+          "title": "Assessed Python Expert",
+          "subtitle": "Pluralsight",
+          "date": "2025",
+          "description": "Completed assessment to quantify understanding of Python at an Expert level."
         }
       ]
     }

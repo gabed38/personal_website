@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import { Box, Button, Heading, Text, Stack, Container } from '@chakra-ui/react'
+import { Box, Button, Heading, Text, Stack, Container, Icon } from '@chakra-ui/react'
+import { FaLinkedin } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -63,10 +64,10 @@ export default function Home() {
                 transition={{ delay: 0.4 }}
               >
                 <Text fontSize={{ base: "lg", md: "xl" }} mb={4} color="whiteAlpha.900">
-                  AI-focused Software Engineer building production-grade LLM apps.
+                  AI-focused Software Engineer building production-grade LLM apps
                 </Text>
                 <Text fontSize={{ base: "lg", md: "xl" }} mb={8} color="whiteAlpha.900">
-                  Check out my Resume and Projects below.
+                  Check out my background below
                 </Text>
               </m.div>
 
@@ -100,6 +101,20 @@ export default function Home() {
                       transition="all 0.2s"
                     >
                       View Projects
+                    </Button>
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/gabriel-darnell-922601165/" passHref>
+                    <Button 
+                      as="a" 
+                      size="lg"
+                      colorScheme="linkedin" 
+                      rounded="xl" 
+                      shadow="lg"
+                      leftIcon={<Icon as={FaLinkedin} boxSize={5} />}
+                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                      transition="all 0.2s"
+                    >
+                      LinkedIn
                     </Button>
                   </Link>
                   <Link href="/contact" passHref>

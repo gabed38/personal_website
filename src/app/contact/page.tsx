@@ -2,6 +2,7 @@
 
 import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast, Heading } from '@chakra-ui/react'
 import { useState } from 'react'
+import BackButton from '@/components/ui/BackButton'
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -42,6 +43,7 @@ export default function Contact() {
 
   return (
     <Box maxW="lg" mx="auto" p={8}>
+      <BackButton />
       <Heading mb={6}>Contact Me</Heading>
       <form onSubmit={handleSubmit}>
         <FormControl id="name" mb={4} isRequired>
