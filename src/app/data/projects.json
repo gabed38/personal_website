@@ -2,13 +2,20 @@
   "projects": [
     {
       "title": "MCP Server",
-      "description": "Trying out MCPs for Claude",
+      "description": "Trying out MCPs for Claude Tools",
       "link": "https://github.com/gabed38/weather"
     },
     {
       "title": "Resume Website",
-      "description": "A portfolio website with Chakra UI.",
+      "description": "This portfolio website using Chakra UI",
       "link": "https://github.com/gabed38/personal_website"
+    },
+    {
+      "title": "Finding the “Network” Behind Neural Networks",
+      "description": "Structural and Metric Analysis of Multilayer Perceptron Networks",
+      "type": "download",
+      "link": "/papers/neural_networks_analysis.pdf",
+      "fileType": "PDF"
     }
   ]
 }
