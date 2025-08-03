@@ -11,6 +11,11 @@
       "link": "https://github.com/gabed38/personal_website"
     },
     {
+      "title": "Predicting Medical Visits from GPS Mobility in the Time of COVID-19",
+      "description": "Leveraging activity sensing and location data using machine learning models",
+      "link": "https://github.com/gabed38/activity_sensing"
+    },
+    {
       "title": "Finding the “Network” Behind Neural Networks",
       "description": "Structural and Metric Analysis of Multilayer Perceptron Networks",
       "type": "download",
