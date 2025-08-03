@@ -67,7 +67,7 @@ export default function Home() {
                   AI-focused Software Engineer building production-grade LLM apps
                 </Text>
                 <Text fontSize={{ base: "lg", md: "xl" }} mb={8} color="whiteAlpha.900">
-                  Check out my background below
+                  Check out my background and experience below
                 </Text>
               </m.div>
 
@@ -76,60 +76,65 @@ export default function Home() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                <Stack direction={{ base: 'column', md: 'row' }} spacing={6} justify="center">
-                  <Link href="/resume" passHref>
-                    <Button 
-                      as="a" 
-                      size="lg"
-                      colorScheme="blue" 
-                      rounded="xl" 
-                      shadow="lg"
-                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
-                      transition="all 0.2s"
-                    >
-                      View Resume
-                    </Button>
-                  </Link>
-                  <Link href="/projects" passHref>
-                    <Button 
-                      as="a" 
-                      size="lg"
-                      colorScheme="purple" 
-                      rounded="xl" 
-                      shadow="lg"
-                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
-                      transition="all 0.2s"
-                    >
-                      View Projects
-                    </Button>
-                  </Link>
-                  <Link href="https://www.linkedin.com/in/gabriel-darnell-922601165/" passHref>
-                    <Button 
-                      as="a" 
-                      size="lg"
-                      colorScheme="linkedin" 
-                      rounded="xl" 
-                      shadow="lg"
-                      leftIcon={<Icon as={FaLinkedin} boxSize={5} />}
-                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
-                      transition="all 0.2s"
-                    >
-                      LinkedIn
-                    </Button>
-                  </Link>
-                  <Link href="/contact" passHref>
-                    <Button 
-                      as="a" 
-                      size="lg"
-                      colorScheme="pink" 
-                      rounded="xl" 
-                      shadow="lg"
-                      _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
-                      transition="all 0.2s"
-                    >
-                      Contact
-                    </Button>
-                  </Link>
+                <Stack spacing={6}>
+                  <Stack direction={{ base: 'column', md: 'row' }} spacing={6} justify="center">
+                    <Link href="/resume" passHref>
+                      <Button 
+                        as="a" 
+                        size="lg"
+                        colorScheme="blue" 
+                        rounded="xl" 
+                        shadow="lg"
+                        _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                        transition="all 0.2s"
+                      >
+                        Resume
+                      </Button>
+                    </Link>
+                    <Link href="/projects" passHref>
+                      <Button 
+                        as="a" 
+                        size="lg"
+                        colorScheme="purple" 
+                        rounded="xl" 
+                        shadow="lg"
+                        _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                        transition="all 0.2s"
+                      >
+                        Projects
+                      </Button>
+                    </Link>
+                    <Link href="/contact" passHref>
+                      <Button 
+                        as="a" 
+                        size="lg"
+                        colorScheme="pink" 
+                        rounded="xl" 
+                        shadow="lg"
+                        _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                        transition="all 0.2s"
+                      >
+                        Contact
+                      </Button>
+                    </Link>
+                  </Stack>
+                  
+                  <Stack direction={{ base: 'column', md: 'row' }} spacing={6} justify="center">
+                    <Link href="https://www.linkedin.com/in/gabriel-darnell-922601165/" passHref>
+                      <Button 
+                        as="a" 
+                        size="lg"
+                        colorScheme="linkedin" 
+                        rounded="xl" 
+                        shadow="lg"
+                        leftIcon={<Icon as={FaLinkedin} boxSize={5} />}
+                        _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                        transition="all 0.2s"
+                      >
+                        LinkedIn
+                      </Button>
+                    </Link>
+                  </Stack>
                 </Stack>
               </m.div>
             </Box>
