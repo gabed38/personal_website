@@ -18,6 +18,7 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",  // This tells TypeScript to start looking from the project root
     "paths": {
       "@/*": ["./src/*"]
     }
