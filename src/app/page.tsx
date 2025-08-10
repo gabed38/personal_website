@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import { Box, Button, Heading, Text, Stack, Container, Icon } from '@chakra-ui/react'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -132,6 +132,20 @@ export default function Home() {
                         transition="all 0.2s"
                       >
                         LinkedIn
+                      </Button>
+                    </Link>
+                    <Link href="https://github.com/gabed38" passHref>
+                      <Button 
+                        as="a" 
+                        size="lg"
+                        colorScheme="gray" 
+                        rounded="xl" 
+                        shadow="lg"
+                        leftIcon={<Icon as={FaGithub} boxSize={5} />}
+                        _hover={{ transform: 'translateY(-2px)', shadow: '2xl' }}
+                        transition="all 0.2s"
+                      >
+                        GitHub
                       </Button>
                     </Link>
                   </Stack>
