@@ -85,10 +85,16 @@
       "title": "Certifications",
       "items": [
         {
-          "title": "Assessed Python Expert",
+          "title": "Pluralsight Python Expert",
           "subtitle": "Pluralsight",
           "date": "2025",
           "description": "Completed assessment to quantify understanding of Python at an Expert level."
+        },
+        {
+          "title": "Pluralsight AI Expert",
+          "subtitle": "Pluralsight",
+          "date": "2025",
+          "description": "Completed assessment to quantify understanding of AI at an Expert level."
         }
       ]
     }
