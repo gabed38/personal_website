@@ -3,8 +3,10 @@
 import { Box, Button, Heading, Link as ChakraLink, Text, Stack, Icon, Container } from '@chakra-ui/react'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa'
-import projectsData from '../data/projects.json'
 import BackButton from '@/components/ui/BackButton'
+import type { ProjectsData } from '@/types/projects'
+
+const projectsData = require('../data/projects.json') as ProjectsData
 
 export default function Projects() {
   return (

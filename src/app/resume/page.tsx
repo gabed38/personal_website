@@ -2,8 +2,11 @@
 
 import { Box, Heading, Text, Stack, Divider, Container } from '@chakra-ui/react'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import resumeData from '../data/resume.json'
 import BackButton from '@/components/ui/BackButton'
+import type { ResumeData } from '@/types/resume'
+
+// Add type assertion to your import
+const resumeData = require('../data/resume.json') as ResumeData
 
 export default function Resume() {
   return (
