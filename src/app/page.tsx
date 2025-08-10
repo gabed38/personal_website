@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import { Box, Button, Heading, Text, Stack, Container, Icon } from '@chakra-ui/react'
+import { Box, Button, Heading, Text, Stack, Container, Icon, Image} from '@chakra-ui/react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Home() {
@@ -56,6 +56,23 @@ export default function Home() {
                 >
                   Hi, I'm Gabriel Darnell
                 </Heading>
+              </m.div>
+              <m.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <Image
+                  src="/images/profile_pic.jpeg"
+                  alt="Gabriel Darnell"
+                  borderRadius="full"
+                  boxSize={{ base: "150px", md: "200px" }}
+                  mx="auto"
+                  mb={6}
+                  border="4px solid"
+                  borderColor="whiteAlpha.300"
+                  shadow="xl"
+                />
               </m.div>
               
               <m.div
