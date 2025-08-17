@@ -81,10 +81,10 @@ export default function Home() {
                 transition={{ delay: 0.4 }}
               >
                 <Text fontSize={{ base: "lg", md: "xl" }} mb={4} color="whiteAlpha.900">
-                  AI-focused Software Engineer building production-grade LLM apps
+                  Master's educated and AI-focused Software Engineer building production-grade LLM apps
                 </Text>
                 <Text fontSize={{ base: "lg", md: "xl" }} mb={8} color="whiteAlpha.900">
-                  Check out my background and experience below
+                  Check out my background, experience, and research below
                 </Text>
               </m.div>
 
