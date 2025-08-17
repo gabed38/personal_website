@@ -1,6 +1,22 @@
 'use client'
 
-import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast, Heading, Container } from '@chakra-ui/react'
+import { 
+  Box, 
+  Button, 
+  FormControl, 
+  FormLabel, 
+  Input, 
+  Textarea, 
+  useToast, 
+  Heading, 
+  Container, 
+  Spinner,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  Text
+} from '@chakra-ui/react'
 import { useState } from 'react'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import BackButton from '@/components/ui/BackButton'
@@ -12,27 +28,59 @@ export default function Contact() {
   const [loading, setLoading] = useState(false)
   const toast = useToast()
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000'
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
 
     try {
-      // TODO: Replace with your actual email submission logic
-      await new Promise((res) => setTimeout(res, 1000))
+      const res = await fetch(`${apiUrl}/api/v1/contact/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      })
+
+      if (!res.ok) throw new Error('Failed to send message')
+
+      const data = await res.json()
 
       toast({
-        title: 'Message sent.',
-        description: "I'll get back to you soon!",
-        status: 'success',
+        render: () => (
+          <Alert status="success" variant="solid" borderRadius="md">
+            <AlertIcon />
+            <Box>
+              <AlertTitle>Message sent!</AlertTitle>
+              <AlertDescription>
+                <Box 
+                  mt={2} 
+                  p={3} 
+                  bg="whiteAlpha.200" 
+                  borderRadius="sm"
+                >
+                  {Object.entries(data.contact).map(([key, value]) => (
+                    <Text key={key} fontSize="sm">
+                      <Text as="span" fontWeight="bold">{key}:</Text> {String(value)}
+                    </Text>
+                  ))}
+                </Box>
+              </AlertDescription>
+            </Box>
+          </Alert>
+        ),
         duration: 5000,
         isClosable: true,
       })
+
       setName('')
       setEmail('')
       setMessage('')
-    } catch {
+    } catch (err) {
       toast({
         title: 'Error sending message.',
+        description: (err as Error).message,
         status: 'error',
         duration: 5000,
         isClosable: true,
@@ -55,6 +103,7 @@ export default function Contact() {
         >
           <Container maxW="container.md" centerContent>
             <Box
+              position="relative"
               p={8}
               borderRadius="2xl"
               backdropFilter="blur(12px)"
@@ -64,6 +113,24 @@ export default function Contact() {
               borderColor="whiteAlpha.200"
               width="100%"
             >
+              {loading && (
+                <Box
+                  position="absolute"
+                  top={0}
+                  left={0}
+                  width="100%"
+                  height="100%"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  bg="rgba(0,0,0,0.4)"
+                  zIndex={10}
+                  borderRadius="2xl"
+                >
+                  <Spinner size="xl" color="white" thickness="4px" />
+                </Box>
+              )}
+
               <m.div
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -84,6 +151,7 @@ export default function Contact() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4 }}
+                style={{ opacity: loading ? 0.5 : 1, pointerEvents: loading ? 'none' : 'auto' }}
               >
                 <form onSubmit={handleSubmit}>
                   <FormControl id="name" mb={4} isRequired>
