@@ -4,7 +4,7 @@
       "title": "Professional Summary",
       "items": [
         {
-          "description": "Software Engineer specializing in AI/ML with expertise in designing and deploying large language model (LLM) systems in production environments. Experienced in building agentic and retrieval-augmented generation (RAG) tools for enterprise applications, optimizing performance and cost efficiency. Skilled in backend and cloud-native development with a strong track record of delivering scalable, reliable AI-powered solutions in fast-paced, collaborative environments."
+          "description": "Software Engineer specializing in AI/ML with expertise in designing and deploying multi-agent LLM systems and RAG applications in production. Experienced in building agentic workflows using prompt engineering, tool-calling, and vector search to solve complex enterprise problems. Skilled in backend and cloud-native development with a proven track record of optimizing AI systems for cost efficiency, accuracy, and scale in fast-paced, collaborative environments."
         }
       ]
     },
@@ -15,7 +15,7 @@
           "title": "Software Engineer (AI Solutions)",
           "subtitle": "Pacific Investment Management Company (PIMCO)",
           "date": "Jan 2024 - Present",
-          "description": "Developed agentic Python application using AutoGen and OpenAI GPT-4 to answer performance and positioning NLP queries, improving analyst productivity by 60%. Built C#/.NET RAG-based tool to prefill DDQs, reducing manual workload by 40%. Authored and presented firmwide LLM Cost Optimization Guide, decreasing LLM usage costs by ~50%. Created regression testing framework for agentic applications to ensure accuracy across iterations. Deployed ML-powered apps on AWS EKS; monitored using Datadog and Komodor. Tech Stack: Python, AutoGen, OpenAI API, C#, .NET, SQL, AWS, JavaScript"
+          "description": "Engineered production multi-agent system with API/library tool calls, RAG retrieval, and vector DB semantic search to answer portfolio performance queries, improving productivity by 75%. Built C#/.NET RAG-based tool to prefill DDQs, reducing manual workload by 40%. Authored and presented firmwide LLM Cost Optimization Guide, decreasing LLM usage costs by ~50%. Created regression testing framework for agentic applications to ensure accuracy across iterations. Deployed ML-powered apps on AWS EKS; monitored using Datadog and Komodor. Tech Stack: Python, Agents SDK, AutoGen, OpenAI API, C#, .NET, SQL, AWS, JavaScript"
         },
         {
           "title": "Software Engineer (Compliance)",
@@ -64,20 +64,20 @@
       "title": "Skills & Technologies",
       "items": [
         {
-          "title": "Programming Languages",
-          "description": "Python, Java, C#, C++, C, PHP, ARM ASM, TypeScript, JavaScript, Go, Scala"
+          "title": "Languages",
+          "description": "Java, Python, C#, C++, C, SQL, PHP, JS, HTML, CSS, Unix, ARM ASM, Arduino, TypeScript, Go, Scala"
         },
         {
-          "title": "AI & Machine Learning",
-          "description": "Autogen, LLM APIs, MCP, LangChain, Hugging Face, PyTorch"
+          "title": "AI/ML",
+          "description": "LLMs, OpenAI API, Retrieval-Augmented Generation (RAG), Agentic Workflows, AutoGen, LangChain, PyTorch, Prompt Engineering (Few Shot and CoT), scikit-learn, NumPy, Pandas, MCP, Hugging Face"
         },
         {
-          "title": "Web Technologies",
-          "description": "React, Next.js, Node.js, GraphQL"
+          "title": "Frameworks/Tools",
+          "description": "AutoGen, OpenAI API, LangChain, React, Next.js, Spring, Docker, Kubernetes, Git, Datadog, Node.js, GraphQL"
         },
         {
-          "title": "Cloud & DevOps",
-          "description": "AWS, Docker, Kubernetes, Git, CI/CD"
+          "title": "Cloud/DevOps",
+          "description": "AWS, EKS, Splunk, Autosys, Quickbuild, CI/CD"
         }
       ]
     },

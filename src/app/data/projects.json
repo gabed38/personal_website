@@ -1,13 +1,18 @@
 {
   "projects": [
     {
+      "title": "SermonFlow Mobile App",
+      "description": "Full-stack mobile application using React Native and FastAPI, published to iOS App Store. Integrated OpenAI API for multi-feature sermon assistance: content expansion, biblical illustration generation, and practical application building. Built sermon management system with PDF export capabilities for pastoral workflow optimization.",
+      "link": "https://github.com/gabed38/sermonflow"
+    },
+    {
       "title": "MCP Server",
-      "description": "Trying out MCPs for Claude Tools",
+      "description": "Built experimental Model Context Protocol (MCP) server, enabling structured real time integrations. Explored agent–tool interactions for scalable AI workflows.",
       "link": "https://github.com/gabed38/weather"
     },
     {
-      "title": "Resume Website",
-      "description": "This portfolio website using Chakra UI",
+      "title": "Personal Website",
+      "description": "Personal portfolio using Chakra UI and Next.js to showcase projects and experience. Frontend deployed to Vercel and backend deployed to Render with CI/CD workflows.",
       "link": "https://github.com/gabed38/personal_website"
     },
     {
@@ -16,7 +21,7 @@
       "link": "https://github.com/gabed38/activity_sensing"
     },
     {
-      "title": "Finding the “Network” Behind Neural Networks",
+      "title": "Finding the 'Network' Behind Neural Networks",
       "description": "Structural and Metric Analysis of Multilayer Perceptron Networks",
       "type": "download",
       "link": "/papers/neural_networks_analysis.pdf",
