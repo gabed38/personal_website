@@ -2,17 +2,17 @@
   "projects": [
     {
       "title": "SermonFlow Mobile App",
-      "description": "Full-stack mobile application using React Native and FastAPI, published to iOS App Store. Integrated OpenAI API for multi-feature sermon assistance: content expansion, biblical illustration generation, and practical application building. Built sermon management system with PDF export capabilities for pastoral workflow optimization.",
-      "link": "https://github.com/gabed38/sermonflow"
+      "description": "Full-stack mobile application using React Native and FastAPI, published to iOS App Store. \nIntegrated OpenAI API for multi-feature sermon assistance: content expansion, biblical illustration generation, and practical application building. \nBuilt sermon management system with PDF export capabilities for pastoral workflow optimization.",
+      "link": "https://sermon-assistant-frontend.vercel.app/"
     },
     {
       "title": "MCP Server",
-      "description": "Built experimental Model Context Protocol (MCP) server, enabling structured real time integrations. Explored agent–tool interactions for scalable AI workflows.",
+      "description": "Built experimental Model Context Protocol (MCP) server, enabling structured real time integrations. \nExplored agent–tool interactions for scalable AI workflows.",
       "link": "https://github.com/gabed38/weather"
     },
     {
       "title": "Personal Website",
-      "description": "Personal portfolio using Chakra UI and Next.js to showcase projects and experience. Frontend deployed to Vercel and backend deployed to Render with CI/CD workflows.",
+      "description": "Personal portfolio using Chakra UI and Next.js to showcase projects and experience. \nFrontend deployed to Vercel and backend deployed to Render with CI/CD workflows.",
       "link": "https://github.com/gabed38/personal_website"
     },
     {

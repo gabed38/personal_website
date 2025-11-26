@@ -15,13 +15,13 @@
           "title": "Software Engineer (AI Solutions)",
           "subtitle": "Pacific Investment Management Company (PIMCO)",
           "date": "Jan 2024 - Present",
-          "description": "Engineered production multi-agent system with API/library tool calls, RAG retrieval, and vector DB semantic search to answer portfolio performance queries, improving productivity by 75%. Built C#/.NET RAG-based tool to prefill DDQs, reducing manual workload by 40%. Authored and presented firmwide LLM Cost Optimization Guide, decreasing LLM usage costs by ~50%. Created regression testing framework for agentic applications to ensure accuracy across iterations. Deployed ML-powered apps on AWS EKS; monitored using Datadog and Komodor. Tech Stack: Python, Agents SDK, AutoGen, OpenAI API, C#, .NET, SQL, AWS, JavaScript"
+          "description": "Engineered production multi-agent system with API/library tool calls, RAG retrieval, and vector DB semantic search to answer portfolio performance queries, improving productivity by 75%. \nBuilt C#/.NET RAG-based tool to prefill DDQs, reducing manual workload by 40%. \nAuthored and presented firmwide LLM Cost Optimization Guide, decreasing LLM usage costs by ~50%. \nCreated regression testing framework for agentic applications to ensure accuracy across iterations. \nDeployed ML-powered apps on AWS EKS; monitored using Datadog and Komodor. Tech Stack: Python, Agents SDK, AutoGen, OpenAI API, C#, .NET, SQL, AWS, JavaScript"
         },
         {
           "title": "Software Engineer (Compliance)",
           "subtitle": "Pacific Investment Management Company (PIMCO)",
           "date": "Feb 2022 - Dec 2023",
-          "description": "Developed monitoring service to flag slow/hung nodes, enhancing system resilience. Upgraded hedging service (Java version, GitLab migration, API refactor). Managed weekly production releases and implemented usability improvements in compliance engine. Tech Stack: Java, Python, Bash, AVRO, SQL, Splunk, Autosys"
+          "description": "Developed monitoring service to flag slow/hung nodes, enhancing system resilience. \nUpgraded hedging service (Java version, GitLab migration, API refactor). \nManaged weekly production releases and implemented usability improvements in compliance engine. \nTech Stack: Java, Python, Bash, AVRO, SQL, Splunk, Autosys"
         },
         {
           "title": "Technology Analyst Intern (Compliance)",
@@ -33,13 +33,13 @@
           "title": "Technology Analyst Intern (Booking Platform)",
           "subtitle": "Pacific Investment Management Company (PIMCO)",
           "date": "Jun 2020 - Aug 2020",
-          "description": "Full stack development of audit service for Booking Platform, deployed on PCF. Managed the project from inception to production deployment including full design documentation. Developed back end in Java using Spring framework connected to Oracle database using AMPS Topics. Presented and demoed working audit service to over 100 employees at end of summer."
+          "description": "Full stack development of audit service for Booking Platform, deployed on PCF. \nManaged the project from inception to production deployment including full design documentation. \nDeveloped back end in Java using Spring framework connected to Oracle database using AMPS Topics. \nPresented and demoed working audit service to over 100 employees at end of summer."
         },
         {
           "title": "Application Specialist Intern",
           "subtitle": "W-Systems",
           "date": "Jun 2019 - Aug 2019",
-          "description": "Coded in PHP within SugarCRM’s framework to customize client instances. Managed a project through the full engineering life cycle that involved DocuSign API. Solved bugs in client instances by running database queries and cleaning up faulty code. Upgraded client instances by altering databases, PHP, JavaScript and MySQL code."
+          "description": "Coded in PHP within SugarCRM’s framework to customize client instances. \nManaged a project through the full engineering life cycle that involved DocuSign API. \nSolved bugs in client instances by running database queries and cleaning up faulty code. \nUpgraded client instances by altering databases, PHP, JavaScript and MySQL code."
         }
       ]
     },
